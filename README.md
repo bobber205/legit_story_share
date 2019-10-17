@@ -8,6 +8,10 @@
 
 `$ react-native link react-native-legit-story-share`
 
+Be sure to install pods if developing for iOS
+
+`$ cd ios && pod install `
+
 ### Manual installation
 
 
@@ -26,7 +30,7 @@
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':react-native-legit-story-share'
-  	project(':react-native-legit-story-share').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-legit-story-share/android')
+  	project(':react-native-legit-story-share').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-legit-story-share/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
@@ -35,9 +39,25 @@
 
 
 ## Usage
-```javascript
-import LegitStoryShare from 'react-native-legit-story-share';
 
-// TODO: What to do with the module?
-LegitStoryShare;
+### Share To Instagram
+```javascript
+import {NativeModules} from 'react-native';
+const RNLegitStoryShare = NativeModules.RNLegitStoryShare;
+
+RNStoryShare.isInstagramAvailable()
+  .then(isAvailable => {
+
+    if(isAvailable){
+      RNStoryShare.shareToInstagram({
+        type: RNStoryShare.BASE64, // or RNStoryShare.FILE
+        attributionLink: 'https://myproject.com',
+        backgroundAsset: 'data:image/png;base64,iVBO...',
+        stickerAsset: 'data:image/png;base64,iVBO...',
+        backgroundBottomColor: '#f44162',
+        backgroundTopColor: '#f4a142'
+      });
+    }
+  })
+  .catch(e => console.log(e));
 ```

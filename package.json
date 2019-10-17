@@ -2,15 +2,15 @@
   "name": "react-native-legit-story-share",
   "title": "React Native Legit Story Share",
   "version": "1.0.0",
-  "description": "TODO",
+  "description": "A RN Native module package adopted from Jobeso's package but works with RN 0.60+",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-legit-story-share.git",
-    "baseUrl": "https://github.com/github_account/react-native-legit-story-share"
+    "url": "git+https://github.com/bobber205/legit_story_share.git",
+    "baseUrl": "https://github.com/bobber205/legit_story_share"
   },
   "keywords": [
     "react-native"
