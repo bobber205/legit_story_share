@@ -1,7 +1,7 @@
 {
   "name": "react-native-legit-story-share",
   "title": "React Native Legit Instagram Story Share",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A RN Native module package adopted from Jobeso's package but works with RN 0.60+",
   "main": "index.js",
   "scripts": {
