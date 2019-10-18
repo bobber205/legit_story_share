@@ -42,8 +42,7 @@ Be sure to install pods if developing for iOS
 
 ### Share To Instagram
 ```javascript
-import {NativeModules} from 'react-native';
-const RNLegitStoryShare = NativeModules.RNLegitStoryShare;
+import RNLegitStoryShare from 'react-native-legit-story-share';
 
 RNLegitStoryShare.isInstagramAvailable()
   .then(isAvailable => {

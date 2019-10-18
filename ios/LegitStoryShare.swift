@@ -30,12 +30,6 @@ class RNLegitStoryShare: NSObject{
     }
 
     @objc
-    func addEvent() {
-        print("IN CUSTOM ADD EVENT")
-        // RCTLogInfo("final test Pretending to create an event IN SWIFT");
-    }
-
-    @objc
     func isInstagramAvailable(_ resolve: RCTPromiseResolveBlock,
                               rejecter reject: RCTPromiseRejectBlock) -> Void {
         // resolve(true)

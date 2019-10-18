@@ -1,5 +1,5 @@
 import { NativeModules } from 'react-native';
 
-const { LegitStoryShare } = NativeModules;
+const { RNLegitStoryShare } = NativeModules;
 
-export default LegitStoryShare;
+export default RNLegitStoryShare;
