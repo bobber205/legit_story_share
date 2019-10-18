@@ -12,6 +12,8 @@ Be sure to install pods if developing for iOS
 
 `$ cd ios && pod install `
 
+Before trying to run, if you haven't installed any Swift native module yet, you may get an error about SWIFT_VERSION not being set. This isn't intuitive to do correctly manually so I suggest simply adding a blank swift file to your project and let Xcode do the rest. Nothing like this is needed for Android.
+
 ### Manual installation
 
 
