@@ -45,12 +45,12 @@ Be sure to install pods if developing for iOS
 import {NativeModules} from 'react-native';
 const RNLegitStoryShare = NativeModules.RNLegitStoryShare;
 
-RNStoryShare.isInstagramAvailable()
+RNLegitStoryShare.isInstagramAvailable()
   .then(isAvailable => {
 
     if(isAvailable){
-      RNStoryShare.shareToInstagram({
-        type: RNStoryShare.BASE64, // or RNStoryShare.FILE
+      RNLegitStoryShare.shareToInstagram({
+        type: RNLegitStoryShare.BASE64, // or RNLegitStoryShare.FILE
         attributionLink: 'https://myproject.com',
         backgroundAsset: 'data:image/png;base64,iVBO...',
         stickerAsset: 'data:image/png;base64,iVBO...',
