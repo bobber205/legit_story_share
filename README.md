@@ -14,6 +14,16 @@ Be sure to install pods if developing for iOS
 
 Before trying to run, if you haven't installed any Swift native module yet, you may get an error about SWIFT_VERSION not being set. This isn't intuitive to do correctly manually so I suggest simply adding a blank swift file to your project and let Xcode do the rest. Nothing like this is needed for Android.
 
+If you are using iOS >= 9 you need to add [LSApplicationQueriesSchemes](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/plist/info/LSApplicationQueriesSchemes) to your main `dict` node in your `Info.plist`. Like this:
+
+```xml
+<key>LSApplicationQueriesSchemes</key>
+<array>
+ <string>instagram-stories</string>
+</array>
+```
+
+
 ### Manual installation
 
 
